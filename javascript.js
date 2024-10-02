@@ -48,9 +48,9 @@ const buttons = document.querySelectorAll('button');
     })
 
 function populateDisplay(button) {
-    console.log(button.innerText)
+    if (button.innerText != "AC" && button.innerText != "<") {
     displayValue.textContent += button.innerText;
-
+    }
 
     
 }
