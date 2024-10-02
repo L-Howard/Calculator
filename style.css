@@ -1,10 +1,14 @@
+* {
+    background-color: #aac1b5;
+}
 header {
         text-align: center;
         padding: 25px;
         font-size: 55px;
-        background-color: beige;
+        background-color: #d0c7b6;
         margin-left: 700px;
         margin-right: 700px;
+        color:#f0e8d9
         
 }
 
@@ -12,7 +16,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: beige;
+    background-color: #d0c7b6;
     width: 500px;
     height: 700px;
     margin-left: auto;
@@ -21,7 +25,7 @@ header {
 
 .display {
     padding: 50px;
-    background-color: gray;
+    background-color: #f5f2ec;
     margin-bottom: 60px;
     font-size: 20px;
     text-align: left;
@@ -31,7 +35,12 @@ header {
 button {
     padding: 30px;
     flex: 1;
+    background-color: #f0e8d9;
 
+}
+
+.operator {
+    background-color: #c1decf;
 }
 
 button:active {
