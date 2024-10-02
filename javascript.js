@@ -39,6 +39,7 @@ const operate = function (operator, a, b) {
 
 let displayValue = document.querySelector(".display")
 
+
 const buttons = document.querySelectorAll('button');
 
     buttons.forEach(function(button) {
@@ -48,10 +49,29 @@ const buttons = document.querySelectorAll('button');
     })
 
 function populateDisplay(button) {
-    if (button.innerText != "AC" && button.innerText != "<") {
+    const value = button.innerText
+    if (value != "AC" && value != "<") {
     displayValue.textContent += button.innerText;
     }
 
+    else if (value === "AC") {
+        displayValue.textContent = ""
+        num1 = null;
+        operator = null;
+    }
+
+    else if (value === "<") {
+        displayValue.textContent = displayValue.textContent.slice(0, -1);
+    }
+
+    else if (value === "+") {
+        num1 = parseFloat(displayValue.textContent);
+        operator = "+"
+        displayValue.textContent = ""
+        console.log(num1)
+    }
     
+
 }
+
 
