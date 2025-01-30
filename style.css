@@ -26,11 +26,15 @@ header {
 }
 
 .display {
+    display: flex;
     padding: 50px;
     background-color: #f5f2ec;
     margin-bottom: 60px;
     font-size: 20px;
     text-align: left;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 
@@ -68,4 +72,16 @@ button:active {
 .row5 {
     display: flex;
     justify-content: space-evenly;
+}
+
+.previous {
+    font-size: 20px;
+}
+
+.current {
+    font-size: 30px;
+}
+
+.previous, .current {
+    background-color: #f5f2ec;;
 }
